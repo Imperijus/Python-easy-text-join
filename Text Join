@@ -1,0 +1,61 @@
+def format_values(input_text):
+
+    lines = input_text.strip().splitlines()
+
+    quoted_lines = ["'" + line.strip() + "'" for line in lines if line.strip()]
+
+    formatted = ",".join(quoted_lines)
+
+    return formatted
+
+# ↓↓↓↓↓↓↓ COPY PRICE LISTS HERE ↓↓↓↓↓↓↓↓
+
+pejsek = """
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+"""
+
+print(format_values(pejsek))
+
+def format_values(input_text):
+
+    items = input_text.split()
+
+    quoted_items = ["'" + item + "'" for item in items]
+
+    formatted = ",".join(quoted_items)
+
+    return formatted
+
+example = input()
+
+print(format_values(example))
